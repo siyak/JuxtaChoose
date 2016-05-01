@@ -1,7 +1,5 @@
 <?php
 class Util {
-    public static $contextRandNums = array();
-    public static $isSetRandNums = null;
 
     public static function isStringSet($string) {
         if (!(isset($string))) {

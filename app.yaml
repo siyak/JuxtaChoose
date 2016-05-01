@@ -1,0 +1,46 @@
+application: juxtachoose
+version: 1
+runtime: php
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /css
+  static_dir: css
+
+- url: /bootstrap
+  static_dir: bootstrap
+
+- url: /images
+  static_dir: images
+
+- url: /js
+  static_dir: js
+
+- url: /service/(.*)
+  script: /service/\1
+
+- url: /create_poll\.php
+  script: create_poll.php
+
+- url: /view_poll\.php
+  script: view_poll.php
+
+- url: /vote\.php
+  script: vote.php
+
+- url: /poll_list\.php
+  script: poll_list.php
+
+- url: /login\.php
+  script: login.php
+
+- url: /about\.php
+  script: about.php
+
+- url: .*
+  script: main.php

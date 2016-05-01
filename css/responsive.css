@@ -1,0 +1,146 @@
+/* iPads (portrait and landscape) ----------- */
+/*@media (min-width: 768px) and (max-width: 991px){
+    html{
+        font-size: 8px;
+    }
+}*/
+
+/* Desktops and laptops ----------- */
+/*@media (min-width: 992px) and (max-width: 1199px){
+    html{
+        font-size: 10px;
+    }
+}*/
+
+/* Large screens ----------- */
+/*@media (min-width: 1200px){
+    html{
+        font-size: 10px;
+    }
+}*/
+
+@media only screen
+{
+	html	{
+		font-size: 10px;
+	}
+}
+@media only screen and (min-device-width :320px) and (max-device-width :480px) and (orientation :landscape)
+{
+	.content{
+		min-height: 83vh;
+		margin-bottom: 45px;
+	}
+	.footer{
+		position: fixed;
+		bottom: 0px;
+	}
+}
+@media only screen and (min-device-width :320px) and (max-device-width :480px)
+{
+	html	{
+		font-size: 8px;
+	}
+	.content{
+		min-height: 92.1vh;
+	}
+	.welcome-msg{
+		width: 100vw;
+	}
+}
+@media only screen and (min-device-width :414px) and (max-device-width :736px) and (orientation :landscape)
+{
+	html	{
+		font-size: 8px;
+	}
+	.content{
+		min-height: 67vh;
+		margin-bottom: 45px;
+	}
+	.footer{
+		position: fixed;
+		bottom: 0px;
+	}
+	.welcome-msg{
+		width: 100vw;
+	}
+}
+@media only screen and (max-device-width :568px) and (orientation :portrait)
+{
+	.content{
+		min-height: 83vh;
+		margin-bottom: 45px;
+	}
+	.about-msg{
+		padding: 10px;
+	}
+	.footer{
+		position: fixed;
+		bottom: 0px;
+	}
+}
+@media only screen and (min-device-width :414px) and (max-device-width :736px) and (orientation :portrait)
+{
+	html	{
+		font-size: 8px;
+	}
+	.content{
+		min-height: 93.5vh;
+	}
+	.welcome-msg{
+		width: 100vw;
+	}
+}
+@media only screen and (min-width :321px)
+{
+	html	{
+		font-size: 8px;
+	}
+}
+@media only screen and (max-width :320px)
+{
+	html	{
+		font-size: 7px;
+	}
+}
+@media only screen and (min-device-width :768px) and (max-device-width :1024px)
+{
+	html	{
+		font-size: 8px;
+	}
+}
+@media only screen and (min-device-width :768px) and (max-device-width :1024px) and (orientation :landscape)
+{
+	html	{
+		font-size: 8px;
+	}
+	.content{
+		min-height: 85.1vh;
+		margin-bottom: 45px;
+	}
+	.footer{
+		position: fixed;
+		bottom: 0px;
+	}
+}
+@media only screen and (min-device-width :768px) and (max-device-width :1024px) and (orientation :portrait)
+{
+	html	{
+		font-size: 8px;
+	}
+	.content{
+		width: 100vw;
+	}
+}
+@media only screen and (min-width :1224px)
+{
+	html	{
+		font-size: 10px;
+	}
+}
+@media only screen and (min-width :1824px)
+{
+	html	{
+		font-size: 12px;
+	}
+}

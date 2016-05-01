@@ -1,0 +1,434 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family:arial, helvetica, verdana;
+    font-size:1.4rem;
+    width:100%;
+    height:100%;
+    background-color: #FFF;
+    margin: 0px;
+    padding: 0px;
+    background: #EAEAEA url('../images/scanline.png') repeat;
+}
+
+.no-left-padding{
+    padding-left: 0px;
+}
+.no-right-padding{
+    padding-right: 0px;
+}
+.no-left-right-padding{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.outer-wrapper{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+}
+.header, .content, .footer{
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.header{
+    background-color: #000;
+    color: #E7E7E7;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+}
+.content{
+    padding: 40px 15px;
+    min-height: 82.5vh;
+}
+.loader{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    display: none;
+}
+.loader-film{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.8;
+}
+.loader-content{
+    position: relative;
+    top: 37vh;
+    width: 300px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+.juxtachoose-loader{
+    width: 35%;
+    margin-top: 20px;
+}
+.close-loader{
+    position: absolute;
+    top: -19px;
+    right: -19px;
+    display: none;
+}
+
+/*--------------------Header start--------------------*/
+
+.juxtachoose-img-wrapper{
+    width: 36px;
+    display: inline-block;
+    margin: 15px;
+    float: left;
+}
+.juxtachoose-img{
+    width: 100%;
+}
+.juxtachoose-title{
+    display: inline-block;
+    margin: 15px 0;
+}
+.juxtachoose-home, .add-poll, .view-poll-list{
+    color: #fff;
+    text-decoration: none;
+}
+.juxtachoose-home:hover, .add-poll:hover, .view-poll-list:hover{
+    color: #fff;
+}
+.add-poll, .view-poll-list{
+    position: absolute;
+    right: calc(4rem + 73px);
+    top: 30%;
+    font-size: 25px;
+}
+.view-poll-list{
+    right: calc(6rem + 98px);
+}
+.menu-item{
+    display: none;
+}
+.header .fb_iframe_widget{
+    position: absolute !important;
+    right: 2rem;
+    top: 33%;
+}
+.fb-login{
+    
+}
+
+/*--------------------Header end--------------------*/
+
+/*--------------------Footer start--------------------*/
+
+.footer{
+    padding: 15px 0;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    bottom: 0px;
+    z-index: 1500;
+}
+.about-juxtachoose{
+    text-align: right;
+    border-right: 1px solid #fff;
+    cursor: pointer;
+}
+
+/*--------------------Footer end--------------------*/
+
+/*--------------------Content start--------------------*/
+
+/* About */
+.about-msg{
+    border: 4px solid #fff;
+    -webkit-box-shadow: 0 2px 5px -1px #CCC;
+    -moz-box-shadow: 0 2px 5px -1px #CCC;
+    box-shadow: 0 2px 5px -1px #CCC;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: bottom;
+    display: table-cell;
+    background-color: #FFF;
+    padding: 10px 100px;
+    background-color: #FFF;
+    border: 1px solid #EAEAEA;
+    text-align: left;
+}
+.create-poll-instructions{
+    list-style: inherit;
+    padding: 0 30px;
+}
+
+/* View Poll */
+.view-poll-title-wrapper, .vote-poll-title-wrapper{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.view-poll-title-wrapper .fb-share-button-wrapper, .vote-poll-title-wrapper .fb-share-button-wrapper{
+    text-align: left;
+    margin: 6.5px 0;
+}
+.view-poll-title{
+    text-align: left;
+    margin: 0;
+}
+
+/* Vote on poll */
+.vote-on-poll{
+    position: absolute;
+    bottom: -25px;
+    font-size: 60px;
+    height: 60px;
+    width: 60px;
+}
+.vote-on-poll .hvr-icon-bounce{
+    position: relative;
+    float: left;
+}
+.vote-poll-title{
+    margin: 0;
+}
+
+/* View User Polls */
+.poll-item-item{
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;
+    background-color: #F8F8F8;
+    -webkit-box-shadow: 0px 0px 8px 0px #EAEAEA;
+    -moz-box-shadow: 0px 0px 8px 0px #EAEAEA;
+    box-shadow: 5px 0px 8px 0px #EAEAEA;
+    padding: 15px;
+    border-left: 15px solid orange;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.poll-pie-chart{
+    height: 220px;
+    width: 200px;
+    margin: 0 auto;
+}
+.poll-pie-chart.no-votes{
+    height: 100px;
+    width: 100px;
+    margin: 10px auto;
+    text-align: center;
+    border: 1px dashed;
+    border-radius: 50px;
+    line-height: 100px;
+}
+.poll-pie-chart-inner{
+    position: relative;
+}
+.poll-item-item-image-wrapper{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.view-user-poll .poll-item{
+    cursor: default;
+}
+.view-poll-link{
+    color: #444;
+    text-decoration: none;
+}
+.view-poll-link:hover{
+    color: #444;
+}
+
+/* Poll */
+.poll-item-link{
+    text-decoration: none;
+    color: #444;
+}
+.poll-item-link:hover{
+    color: #444;
+}
+.poll-item{
+    margin-bottom: 30px;
+}
+.opacity-holder{
+    position: relative;
+    float: left;
+    -webkit-box-shadow: 0 2px 5px -1px #CCC;
+    -moz-box-shadow: 0 2px 5px -1px #CCC;
+    box-shadow: 0 2px 5px -1px #CCC;
+    border-radius: 10px;
+}
+.opacity-div{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+.poll-item-inner{
+    text-align: center;
+    padding: 15px;
+    overflow: hidden;
+    z-index: 1000;
+}
+.poll-item-image{
+    width: 100%;
+}
+.poll-item-content{
+
+}
+.poll-item-title h4{
+    font-size: 25px;
+    line-height: 30px;
+}
+.poll-item-cost{
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Create Poll */
+.fetch-data-note{
+    font-size: 10px;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Welcome */
+.welcome-msg{
+    border: 4px solid #fff;
+    -webkit-box-shadow: 0 2px 5px -1px #CCC;
+    -moz-box-shadow: 0 2px 5px -1px #CCC;
+    box-shadow: 0 2px 5px -1px #CCC;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: bottom;
+    display: table-cell;
+    background-color: #FFF;
+    padding: 10px;
+    background-color: #FFF;
+    border: 1px solid #EAEAEA;
+    text-align: center;
+}
+.welcome-msg .fb-login-button{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.create-first-poll{
+    margin-bottom: 20px;
+}
+
+/* Create Poll */
+.create-poll-final-step, .create-or-more-txt{
+    display: none;
+}
+.create-or-more-txt{
+    padding: 20px 15px;
+}
+.create-poll-title, .poll-item-search-by-url{
+    height: 34px;
+    position: relative;
+    top: 2px;
+}
+.create-poll-btn-wrapper{
+    text-align: center;
+}*/
+
+
+
+
+
+/*--------------------Content end--------------------*/
+
+/*--------------------Pie start--------------------*/
+
+.pie {
+    position:absolute;
+    width:100px;
+    height:200px;
+    overflow:hidden;
+    left:100px;
+    -moz-transform-origin:left center;
+    -ms-transform-origin:left center;
+    -o-transform-origin:left center;
+    -webkit-transform-origin:left center;
+    transform-origin:left center;
+}
+.pie.big {
+    width:200px;
+    height:200px;
+    left:0px;
+    -moz-transform-origin:center center;
+    -ms-transform-origin:center center;
+    -o-transform-origin:center center;
+    -webkit-transform-origin:center center;
+    transform-origin:center center;
+}
+.pie:before {
+    content:"";
+    position:absolute;
+    width:100px;
+    height:200px;
+    left:-100px;
+    border-radius:100px 0 0 100px;
+    -moz-transform-origin:right center;
+    -ms-transform-origin:right center;
+    -o-transform-origin:right center;
+    -webkit-transform-origin:right center;
+    transform-origin:right center;
+    
+}
+.pie.equally-big:before{
+    left: 0px;
+}
+.pie.big:before {
+    left:0px;
+}
+.pie.big:after {
+    content:"";
+    position:absolute;
+    width:100px;
+    height:200px;
+    left:100px;
+    border-radius:0 100px 100px 0;
+}
+
+/*--------------------Pie end--------------------*/
+
+.hover-icon-spin {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+.hover-icon-spin:hover{
+    webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+}
